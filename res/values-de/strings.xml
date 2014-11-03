@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AdaptiveUI</string>
+    <string name="hello_world">Hallo Welt!</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="red">Rot</string>
+    <string name="green">Grün</string>
+    <string name="blue">Blau</string>
+    <string name="user">Benutzer</string>
+    <string name="userTextFieldString">"Eingeloggt als: "</string>
+    <string name="wifiTextViewString">"WiFi: "</string>
+    <string name="wifiEnabledString">"eingeschaltet"</string>
+    <string name="wifiDisabledString">"ausgeschaltet"</string>
+    <string name="downloadButtonString">Herunterladen</string>
+
+</resources>

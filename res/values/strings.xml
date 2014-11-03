@@ -9,5 +9,10 @@
     <string name="green">Green</string>
     <string name="blue">Blue</string>
     <string name="user">User</string>
+    <string name="userTextFieldString">"Logged in as: "</string>
+    <string name="wifiTextViewString">"WiFi: "</string>
+    <string name="wifiEnabledString">"enabled"</string>
+    <string name="wifiDisabledString">"disabled"</string>
+    <string name="downloadButtonString">Download</string>
 
 </resources>

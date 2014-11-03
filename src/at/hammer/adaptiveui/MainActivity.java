@@ -4,10 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import at.hammer.adaptiveui.R;
 import at.hammer.adaptiveui.SettingsActivity;
@@ -19,6 +21,7 @@ public class MainActivity extends Activity implements OnSharedPreferenceChangeLi
 	
 	//define xml variables
 	TextView userTextView;
+	LinearLayout layout;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,7 @@ public class MainActivity extends Activity implements OnSharedPreferenceChangeLi
         user = sharedPref.getString("users","red");
         
         init();
+        setBackground();
         
         userTextView.setText("Logged in as: " + user);
 	}
@@ -40,7 +44,22 @@ public class MainActivity extends Activity implements OnSharedPreferenceChangeLi
 	 */
 	public void init() {
 		userTextView = (TextView) findViewById(R.id.userTextView);
-		
+		layout = (LinearLayout) findViewById(R.id.linearLayout1);
+	}
+	
+	/**
+	 * Changes the background of the activity user dependent
+	 */
+	public void setBackground() {
+        if(user.equals(getResources().getString(R.string.red))){
+            layout.setBackgroundColor(Color.RED);
+        }
+        if(user.equals(getResources().getString(R.string.green))){
+            layout.setBackgroundColor(Color.GREEN);
+        }
+        if(user.equals(getResources().getString(R.string.blue))){
+            layout.setBackgroundColor(Color.BLUE);
+        }
 	}
 
 	@Override

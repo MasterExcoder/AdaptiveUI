@@ -4,7 +4,7 @@
     <string name="app_name">AdaptiveUI</string>
     <string name="hello_world">Hallo Welt!</string>
     <string name="action_settings">Einstellungen</string>
-    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_settings">Einstellungen</string>
     <string name="red">Rot</string>
     <string name="green">Grün</string>
     <string name="blue">Blau</string>

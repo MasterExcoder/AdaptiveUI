@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:key="users"
+                    android:title="@string/user"
+                    android:entries="@array/user_keys"
+                    android:entryValues="@array/user_values"
+                    android:defaultValue="red"
+    />
+</PreferenceScreen>

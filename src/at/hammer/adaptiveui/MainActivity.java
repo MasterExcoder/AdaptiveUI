@@ -8,6 +8,7 @@ import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
@@ -31,6 +32,7 @@ public class MainActivity extends Activity implements OnSharedPreferenceChangeLi
 	LinearLayout layout;
 	TextView wifiTextView;
 	Button downloadButton;
+	TextView apiTextView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +62,9 @@ public class MainActivity extends Activity implements OnSharedPreferenceChangeLi
         	wifiTextView.setText(wifiTextView.getText() + getString(R.string.wifiDisabledString));
         	downloadButton.setVisibility(View.INVISIBLE);
         }
+        
+        //display current API
+        apiTextView.setText(apiTextView.getText() + ""+ Build.VERSION.SDK_INT);
 	}
 	
 	/**
@@ -70,6 +75,7 @@ public class MainActivity extends Activity implements OnSharedPreferenceChangeLi
 		layout = (LinearLayout) findViewById(R.id.linearLayout1);
 		wifiTextView = (TextView) findViewById(R.id.wifiTextView);
 		downloadButton = (Button) findViewById(R.id.downloadButton);
+		apiTextView = (TextView) findViewById(R.id.apiTextView);
 	}
 	
 	/**

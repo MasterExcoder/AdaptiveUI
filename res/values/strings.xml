@@ -14,5 +14,6 @@
     <string name="wifiEnabledString">"enabled"</string>
     <string name="wifiDisabledString">"disabled"</string>
     <string name="downloadButtonString">Download</string>
+    <string name="apiTextViewString">"Current API: "</string>
 
 </resources>

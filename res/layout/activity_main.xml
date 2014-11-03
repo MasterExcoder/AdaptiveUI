@@ -47,4 +47,11 @@
         android:layout_height="wrap_content"
         android:src="@drawable/strichmaxl" />
 
+    <TextView
+        android:id="@+id/apiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/apiTextViewString"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
 </LinearLayout>
